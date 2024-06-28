@@ -1,5 +1,4 @@
-
-*"Haber" Classifier: Existentiality and Normativity Analysis
+# "Haber" Classifier: Existentiality and Normativity Analysis
 
 This repository contains a Python script to process a corpus of YouTube transcriptions, identify and analyze instances of the verb "haber" in various contexts, and classify these instances based on specific linguistic norms. The script is designed to work with Parquet files generated using the [Y3C (YouTube Captions Corpus Creator)](https://github.com/johnatanebonilla/y3c) script.
 
