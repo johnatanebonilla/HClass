@@ -1,4 +1,4 @@
-# "Haber" Classifier: Existentiality and Normativity Analysis
+# HClass: "Haber" Classifier: Existentiality and Normativity Analysis
 
 This repository contains a Python script to process a corpus of YouTube transcriptions, identify and analyze instances of the verb "haber" in various contexts, and classify these instances based on specific linguistic norms. The script is designed to work with Parquet files generated using the [Y3C (YouTube Captions Corpus Creator)](https://github.com/johnatanebonilla/y3c) script.
 
@@ -18,8 +18,8 @@ The Y3C project provides a Python script to create a corpus of YouTube transcrip
 To install the required dependencies, run:
 
 ```bash
-git clone https://github.com/johnatanebonilla/class_haber.git
-cd class_haber
+git clone https://github.com/johnatanebonilla/Hclass.git
+cd Hclass
 pip install pandas spacy fastparquet tqdm openpyxl
 ```
 
@@ -28,7 +28,7 @@ pip install pandas spacy fastparquet tqdm openpyxl
 To run the script, use the following command:
 
 ```bash
-python class_haber.py --parquet path/to/input/folder --output path/to/output/folder --model [sm|md|lg|trf]
+python HClass.py --parquet path/to/input/folder --output path/to/output/folder --model [sm|md|lg|trf]
 ```
 
 - `--parquet`: Path to the input folder containing Parquet files.
