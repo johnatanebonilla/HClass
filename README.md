@@ -55,7 +55,7 @@ The script classifies instances of "haber" into two categories:
 The script further classifies existential uses of "haber" in the `haber_ex_norm_plur_yt.xlsx` file into the following categories:
 
 1. **Normative Use of "Haber"**: These are instances where the use of "haber" follows the normative grammar rules of Spanish.
-   - **Pluralization Norm**: According to standard Spanish grammar, "haber" in existential constructions should always be in the singular form, regardless of the plurality of the subject. For example, "hay libros en la mesa" (correct) vs. "hay libros en la mesa" (incorrect if pluralized).
+   - **Pluralization Norm**: According to standard Spanish grammar, "haber" in existential constructions should always be in the singular form, regardless of the plurality of the subject. For example, "hay libros en la mesa".
 
 2. **Non-Normative Pluralized Use of "Haber"**: These are instances where "haber" is incorrectly pluralized in existential constructions, which is non-normative in Spanish.
    - Examples include "habían libros en la mesa" instead of "había libros en la mesa".
