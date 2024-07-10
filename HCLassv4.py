@@ -287,7 +287,7 @@ def process_ex_parquet(parquet_path, output_xlsx_path, nlp):
 
 def main(parquet_folder, output_folder, spacy_model):
     # Instalar los requerimientos necesarios
-    os.system("pip install pandas spacy fastparquet tqdm openpyxl")
+    os.system("pip install pandas spacy fastparquet tqdm openpyxl spacy-transformers")
 
     # Instalar el modelo de spaCy necesario
     if spacy_model == "trf":
@@ -298,6 +298,8 @@ def main(parquet_folder, output_folder, spacy_model):
         os.system(f"python -m spacy download {model_name}")
 
     # Cargar el modelo de spaCy
+    if spacy_model == "trf":
+        import spacy_transformers
     nlp = spacy.load(model_name)
 
     # Leer todos los archivos .parquet en la carpeta y combinarlos en un DataFrame
