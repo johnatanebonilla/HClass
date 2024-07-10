@@ -291,11 +291,11 @@ def main(parquet_folder, output_folder, spacy_model):
 
     # Instalar el modelo de spaCy necesario
     if spacy_model == "trf":
+        os.system("pip install https://huggingface.co/spacy/es_dep_news_trf/resolve/main/es_dep_news_trf-any-py3-none-any.whl")
         model_name = "es_dep_news_trf"
     else:
         model_name = f"es_core_news_{spacy_model}"
-
-    os.system(f"python -m spacy download {model_name}")
+        os.system(f"python -m spacy download {model_name}")
 
     # Cargar el modelo de spaCy
     nlp = spacy.load(model_name)
