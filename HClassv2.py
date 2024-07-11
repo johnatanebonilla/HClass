@@ -236,7 +236,7 @@ def process_ex_parquet(parquet_path, output_xlsx_path, nlp):
 
 def classify_normativa_sheet(output_xlsx_path):
     # Load the Spanish NLP model
-    nlp = spacy.load("es_core_news_sm")
+    nlp = spacy.load("es_core_news_lg")
 
     # Load the Excel file
     df = pd.read_excel(output_xlsx_path, sheet_name='normativa')
